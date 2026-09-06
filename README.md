@@ -1,59 +1,134 @@
 # 📊 Dashboard de Gestão Cirúrgica
 
-Dashboard desenvolvido em Power BI para análise e acompanhamento de procedimentos cirúrgicos, permitindo monitorar volume de cirurgias, cumprimento de prazo, tempo de realização, distribuição por unidade e principais motivos de atraso.
+Dashboard desenvolvido em **Power BI** para análise e acompanhamento de procedimentos cirúrgicos, com foco em indicadores de desempenho, cumprimento de prazos, tempo de realização, distribuição por unidade e identificação de oportunidades de melhoria.
+
+![Visão Geral](Imagens/visao-geral.png)
+
+---
 
 ## 🎯 Objetivo
 
-O projeto tem como objetivo transformar dados operacionais em informações visuais que permitam acompanhar o desempenho dos procedimentos cirúrgicos e identificar situações que demandam atenção.
+O projeto tem como objetivo transformar dados operacionais em informações visuais que apoiem o acompanhamento da operação e a tomada de decisão.
+
+A solução foi estruturada para permitir análises gerenciais e operacionais, facilitando a identificação de desvios, gargalos e oportunidades de melhoria.
 
 Entre os principais pontos analisados estão:
 
 - Volume de procedimentos realizados;
-- Pacientes com idade superior a 60 anos;
+- Pacientes com idade superior a 60 anos (casos de risco);
 - Tempo médio e máximo entre autorização e realização;
-- Cumprimento do prazo estabelecido;
+- Cumprimento do prazo estabelecido (SLA);
 - Procedimentos cancelados;
-- Óbitos;
+- Óbitos registrados;
 - Distribuição dos procedimentos por UF e unidade;
 - Principais motivos de atraso;
-- Evolução dos indicadores ao longo do tempo.
+- Evolução dos indicadores ao longo do tempo;
+- Detalhamento de pacientes e procedimentos.
+
+---
 
 ## 📌 Principais Indicadores
 
 O dashboard apresenta indicadores como:
 
-- Quantidade de cirurgias;
-- Pacientes >60 anos;
-- Tempo médio até a realização;
-- Tempo máximo até a realização;
-- Percentual de procedimentos dentro do prazo;
-- Procedimentos cancelados;
-- Óbitos.
+- **Quantidade de cirurgias**
+- **Pacientes > 60 anos**
+- **Tempo médio até a realização**
+- **Tempo máximo até a realização**
+- **Percentual de procedimentos dentro do prazo**
+- **Procedimentos cancelados**
+- **Óbitos registrados**
 
-## 📈 Análises Desenvolvidas
+---
 
-### Visão Geral
+## 📈 Estrutura do Dashboard
 
-A primeira página apresenta uma visão executiva dos principais indicadores, permitindo uma análise rápida do cenário geral.
+O projeto é dividido em quatro páginas principais.
 
-Entre os visuais estão:
+### 1. Visão Geral
+
+Apresenta uma visão executiva dos principais indicadores e permite uma leitura rápida do cenário geral.
+
+Principais análises:
 
 - Procedimentos por UF;
 - Motivos dos atrasos;
-- Ranking por unidade;
-- Cumprimento do SLA por mês para pacientes >60 anos;
-- Cumprimento do SLA por mês para pacientes <60 anos.
+- Ranking de desempenho por unidade;
+- Cumprimento do SLA por mês para pacientes com mais de 60 anos;
+- Cumprimento do SLA por mês para pacientes com menos de 60 anos;
+- Indicadores gerais de volume, prazo, cancelamentos e óbitos.
 
-### Visão Analítica
+![Visão Geral](Imagens/pagina-1.jpeg)
 
-A segunda página apresenta uma análise mais detalhada dos dados, permitindo acompanhar:
+### 2. Visão Analítica
+
+Página voltada para uma análise mais detalhada do comportamento dos indicadores.
+
+Principais análises:
 
 - Evolução da quantidade de cirurgias por mês;
+- Quantidade de cirurgias por status;
 - Tempo médio por mês;
-- Distribuição dos status das cirurgias;
 - Tempo médio por unidade;
-- Indicadores detalhados por unidade;
-- Consulta individual de pacientes.
+- Tabela analítica por unidade;
+- Acesso às páginas de detalhamento.
+
+![Visão Analítica](Imagens/pagina-2.jpeg)
+
+### 3. Detalhamento de Pacientes
+
+Página destinada à consulta individual dos registros, permitindo localizar pacientes por meio dos filtros disponíveis.
+
+Informações apresentadas:
+
+- UF;
+- Unidade;
+- Paciente;
+- Idade;
+- Atendimento;
+- Carteirinha;
+- Prazo médio;
+- Status;
+- Motivo do atraso.
+
+![Detalhamento de Pacientes](Imagens/pagina-3.jpeg)
+
+### 4. Detalhamento de Procedimentos
+
+Página destinada à análise dos procedimentos realizados, permitindo avaliar volume e indicadores de desempenho por procedimento e unidade.
+
+Informações apresentadas:
+
+- UF;
+- Unidade;
+- Procedimento;
+- Quantidade de cirurgias;
+- Prazo médio;
+- Prazo máximo;
+- Percentual dentro do prazo;
+- Cirurgias canceladas.
+
+![Detalhamento de Procedimentos](Imagens/pagina-4.jpeg)
+
+---
+
+## 🔎 Filtros e Interatividade
+
+O dashboard possui filtros que permitem realizar análises específicas de acordo com o contexto desejado.
+
+Entre os filtros disponíveis estão:
+
+- Status;
+- UF;
+- Unidade;
+- Paciente;
+- Atendimento;
+- Carteirinha;
+- Data.
+
+A navegação entre as páginas de análise e detalhamento também foi estruturada para facilitar a exploração dos dados.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -65,24 +140,59 @@ A segunda página apresenta uma análise mais detalhada dos dados, permitindo ac
 - **Git**
 - **GitHub**
 
+---
+
 ## 🔄 Tratamento e Modelagem dos Dados
 
-Os dados foram tratados utilizando o Power Query, incluindo processos de:
+Os dados foram tratados e preparados para análise utilizando **Power Query** e **Microsoft Excel**.
 
-- Limpeza e padronização;
+Entre os principais procedimentos realizados estão:
+
+- Limpeza e padronização dos dados;
 - Tratamento de valores nulos;
 - Padronização de categorias;
-- Tratamento de datas;
-- Criação e transformação de campos;
-- Preparação dos dados para análise no Power BI.
+- Tratamento e transformação de campos;
+- Criação de campos derivados;
+- Preparação dos dados para análise temporal;
+- Estruturação das informações para utilização no Power BI;
+- Criação de medidas e indicadores utilizando **DAX**.
 
 A modelagem foi estruturada para permitir análises temporais, operacionais e gerenciais.
 
-## 🎨 Design
+---
 
-A interface do dashboard foi planejada previamente no **Figma**, permitindo definir a disposição dos indicadores, gráficos, filtros e elementos de navegação antes da implementação no Power BI.
+## 🎨 Design e Experiência
 
-O objetivo foi criar uma interface limpa, organizada e orientada à análise dos indicadores.
+A interface do dashboard foi planejada previamente no **Figma**, permitindo definir a estrutura visual, disposição dos indicadores, gráficos, filtros e elementos de navegação antes da implementação no Power BI.
+
+O projeto buscou combinar:
+
+- Clareza na apresentação dos indicadores;
+- Organização das informações;
+- Navegação intuitiva;
+- Padronização visual;
+- Facilidade de análise.
+
+---
+
+## 🔐 Anonimização dos Dados
+
+Para disponibilização pública do projeto, a base utilizada foi **anonimizada e tratada**.
+
+Foram alterados, substituídos ou removidos identificadores e informações que poderiam estar associados aos dados originais, incluindo:
+
+- Identificação de pacientes;
+- Números de atendimento;
+- Carteirinhas;
+- Unidades;
+- Filiais;
+- Setores;
+- Informações relacionadas aos procedimentos;
+- Datas e idades utilizadas na base pública.
+
+A versão disponibilizada neste repositório possui finalidade exclusivamente **demonstrativa e de portfólio**, preservando a estrutura necessária para reprodução das análises apresentadas no dashboard.
+
+---
 
 ## 📂 Estrutura do Repositório
 
@@ -90,30 +200,36 @@ O objetivo foi criar uma interface limpa, organizada e orientada à análise dos
 Dashboard_PowerBI_Gestao_Cirurgica/
 │
 ├── Dashboard/
-│   └── Arquivo do Power BI (.pbix)
-│
-├── Imagens/
-│   └── Imagens e prévias do dashboard
+│   └── Dashboard_Gestao_Cirurgica.pbix
 │
 ├── Dataset/
-│   └── Base de dados anonimizada
+│   └── Base_Cirúrgica.xlsx
+│
+├── Imagens/
+│   ├── layout-figma-pagina-1.png
+│   ├── layout-figma-pagina-2.png
+│   ├── layout-figma-pagina-3.png
+│   ├── layout-figma-pagina-4.png
+│   ├── pagina-1.jpeg
+│   ├── pagina-2.jpeg
+│   ├── pagina-3.jpeg
+│   └── pagina-4.jpeg
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
+---
 
+## 👨‍💻 Autor
 
-### Mas eu faria uma mudança importante
+**Pedro Ryan Azevedo**
 
-**Não colocaria "Dataset" na estrutura agora**, já que você ainda está decidindo quais informações vão permanecer na base. Podemos deixar essa parte para quando você realmente adicionar o arquivo.
+- **GitHub:** [Pedro Ryan Azevedo](https://github.com/pedroryan-tech)
+- **LinkedIn:** [Pedro Ryan Azevedo](https://www.linkedin.com/in/pedro-ryan-azevedo)
 
-E tem outra coisa que eu acho legal fazer: **colocar imagens do dashboard logo no começo do README**. Quem entrar no GitHub já vê o resultado antes mesmo de começar a ler.
+---
 
-Algo assim:
+## ⭐ Apoie o Projeto
 
-```markdown
-# 📊 Dashboard de Gestão Cirúrgica
-
-![Dashboard - Visão Geral](Imagens/visao-geral.png)
-
-Dashboard desenvolvido...
+**Se este projeto foi útil ou interessante para você, deixe uma estrela no repositório!**
