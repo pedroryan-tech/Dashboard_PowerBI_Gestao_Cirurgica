@@ -1,8 +1,20 @@
 # 📊 Dashboard de Gestão Cirúrgica
+# 📊 Dashboard de Gestão Cirúrgica
 
-Dashboard desenvolvido em **Power BI** para análise e acompanhamento de procedimentos cirúrgicos, com foco em indicadores de desempenho, cumprimento de prazos, tempo de realização, distribuição por unidade e identificação de oportunidades de melhoria.
+![Power BI](https://img.shields.io/badge/POWER%20BI-Informational?style=for-the-badge&logo=powerbi&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-Informational?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/POWER%20QUERY-Informational?style=for-the-badge)
+![Excel](https://img.shields.io/badge/EXCEL-Informational?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Figma](https://img.shields.io/badge/FIGMA-Informational?style=for-the-badge&logo=figma&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-Informational?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GITHUB-Informational?style=for-the-badge&logo=github&logoColor=white)
+
+![Status](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-2ea043?style=for-the-badge)
+![License](https://img.shields.io/badge/LICENSE-MIT-007ec6?style=for-the-badge)
 
 ![Visão Geral](Imagens/visao-geral.png)
+
+Dashboard desenvolvido em **Power BI** para análise e acompanhamento de procedimentos cirúrgicos, com foco em indicadores de desempenho, cumprimento de prazos, tempo de realização, distribuição por unidade e identificação de oportunidades de melhoria.
 
 ---
 
