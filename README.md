@@ -1,5 +1,4 @@
 # 📊 Dashboard de Gestão Cirúrgica
-# 📊 Dashboard de Gestão Cirúrgica
 
 ![Power BI](https://img.shields.io/badge/POWER%20BI-Informational?style=for-the-badge&logo=powerbi&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-Informational?style=for-the-badge)
