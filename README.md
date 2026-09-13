@@ -11,7 +11,7 @@
 ![Status](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-2ea043?style=for-the-badge)
 ![License](https://img.shields.io/badge/LICENSE-MIT-007ec6?style=for-the-badge)
 
-![Visão Geral](Imagens/visao-geral.png)
+![Visão Geral](Imagens/Dashboard Gestão Cirúrgica.gif)
 
 Dashboard desenvolvido em **Power BI** para análise e acompanhamento de procedimentos cirúrgicos, com foco em indicadores de desempenho, cumprimento de prazos, tempo de realização, distribuição por unidade e identificação de oportunidades de melhoria.
 
