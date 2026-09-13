@@ -217,6 +217,7 @@ Dashboard_PowerBI_Gestao_Cirurgica/
 │   └── Base_Cirúrgica.xlsx
 │
 ├── Imagens/
+│   ├── Dashboard_Gestão_Cirúrgica.gif
 │   ├── layout-figma-pagina-1.png
 │   ├── layout-figma-pagina-2.png
 │   ├── layout-figma-pagina-3.png
